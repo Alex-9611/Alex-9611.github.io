@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "teletactileregular";
+    src: url('Fonts/teletactile-webfont.woff') format('woff'),
+         url('Fonts/teletactile-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "teletextOne";
+    src: url('Fonts/teletext_1-webfont.woff') format('woff'),
+         url('Fonts/teletext_1-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.NavBarTop {
+    width: 100%;
+    background-color: blue;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.NavBarTop a {
+    color: white;
+    font-family: "teletextOne";
+    text-decoration: none;
+    font-size: 150%;
+}
+
+div.mainGrid {
+    display: grid;
+    grid-template-columns: 45rem 45rem;
+    grid-template-rows: auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+div.subGrid {
+    display: grid;
+    grid-template-columns: 20rem 20rem;
+    grid-template-rows: auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+img.grid-icon {
+    height: 20rem;
+    width: 20rem;
+}
+div.story {
+    font-family: "teletactileRegular";
+    font-size: 100%;
+    padding: 1rem;
+    color: blue;
+}
+
+div.story > h2 {
+    color: yellow;
+}
