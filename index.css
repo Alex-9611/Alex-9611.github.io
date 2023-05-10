@@ -13,27 +13,6 @@
     font-style: normal;
 }
 
-body {
-    background-color: black;
-    color: white;
-}
-h1,h2,h2 {
-    font-family: "teletextOne";
-}
-h1 {
-    color: black;
-    background-color: white;
-    font-size: 500%;
-}
-h2 {
-    color: deeppink;
-    font-size: 250%;
-}
-h3 {
-    color: yellow;
-    font-size: 125%;
-}
-
 .NavBarTop {
     width: 100%;
     background-color: blue;
@@ -83,5 +62,4 @@ img.grid-icon {
 div.story {
     font-family: "teletactileRegular";
     color: blue;
-    overflow: hidden;
 }
