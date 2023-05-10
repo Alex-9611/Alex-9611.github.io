@@ -56,7 +56,7 @@ img.grid-icon {
 div.story {
     font-family: "teletactileRegular";
     font-size: 100%;
-    padding: 1rem;
+    /* padding: 1rem; */
     color: blue;
 }
 
