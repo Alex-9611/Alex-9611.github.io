@@ -17,6 +17,22 @@ body {
     background-color: black;
     color: white;
 }
+h1,h2,h2 {
+    font-family: "teletextOne";
+}
+h1 {
+    color: black;
+    background-color: white;
+    font-size: 500%;
+}
+h2 {
+    color: deeppink;
+    font-size: 250%;
+}
+h3 {
+    color: yellow;
+    font-size: 125%;
+}
 
 .NavBarTop {
     width: 100%;
@@ -35,31 +51,37 @@ body {
     font-size: 150%;
 }
 
+.pageHeader {
+    width: 35rem;
+}
+
 div.mainGrid {
     display: grid;
-    grid-template-columns: 45rem 45rem;
-    grid-template-rows: auto auto;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
+    grid-template-columns: 40.5em 40.5em;
+    grid-template-rows: 5em auto 5em auto;
+    grid-column-gap: 1.5em;
+    grid-row-gap: 1.5em;
+}
+div.gridHeader {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: bold;
+    border: 3px solid red;
 }
 div.subGrid {
     display: grid;
-    grid-template-columns: 20rem 20rem;
+    grid-template-columns: 20em 20em;
     grid-template-rows: auto auto;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
 }
 img.grid-icon {
-    height: 20rem;
-    width: 20rem;
+    height: 20em;
+    width: 20em;
 }
 div.story {
     font-family: "teletactileRegular";
-    font-size: 100%;
-    /* padding: 1rem; */
     color: blue;
-}
-
-div.story > h2 {
-    color: yellow;
+    overflow: hidden;
 }
