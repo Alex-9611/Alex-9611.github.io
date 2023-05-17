@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "teletactileregular";
+  font-family: "teletactileRegular";
   src: url("Fonts/teletactile-webfont.woff") format("woff"), url("Fonts/teletactile-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -10,6 +10,33 @@
   font-weight: normal;
   font-style: normal;
 }
+body {
+  background-color: black;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "teletextOne";
+}
+
+h1 {
+  color: black;
+  background-color: white;
+  font-size: 500%;
+}
+
+h2 {
+  color: fuchsia;
+  font-size: 250%;
+}
+
+h3 {
+  color: yellow;
+  font-size: 125%;
+}
+
 .navbar-top {
   width: 100%;
   background-color: blue;

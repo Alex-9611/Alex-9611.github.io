@@ -1,17 +1,4 @@
-@font-face {
-    font-family: "teletactileregular";
-    src: url("Fonts/teletactile-webfont.woff") format("woff"),
-        url("Fonts/teletactile-webfont.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "teletextOne";
-    src: url("Fonts/teletext_1-webfont.woff") format("woff"),
-        url("Fonts/teletext_1-webfont.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
+@import "teletext";
 
 .navbar-top {
     width: 100%;
@@ -24,7 +11,7 @@
 
     a {
         color: white;
-        font-family: "teletextOne";
+        font-family: $teletext-primary;
         text-decoration: none;
         font-size: 150%;
     }
@@ -56,7 +43,7 @@
     grid-row-gap: 0.5em;
 }
 .story {
-    font-family: "teletactileRegular";
+    font-family: $teletext-secondary;
     color: blue;
     overflow: hidden;
 }

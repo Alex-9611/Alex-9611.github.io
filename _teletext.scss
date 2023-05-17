@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "teletactileregular";
+    font-family: "teletactileRegular";
     src: url("Fonts/teletactile-webfont.woff") format("woff"),
         url("Fonts/teletactile-webfont.woff2") format("woff2");
     font-weight: normal;
@@ -12,6 +12,9 @@
     font-weight: normal;
     font-style: normal;
 }
+
+$teletext-primary: "teletextOne";
+$teletext-secondary: "teletactileRegular";
 
 body {
     background-color: black;
