@@ -13,6 +13,8 @@
 body {
   background-color: black;
   color: white;
+  max-width: 1280px;
+  margin: auto;
 }
 
 h1,
@@ -54,7 +56,7 @@ h3 {
 }
 
 .page-header {
-  width: 35rem;
+  width: 50%;
 }
 
 .main-grid {
