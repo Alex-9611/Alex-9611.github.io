@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "teletactileregular";
+    src: url("Fonts/teletactile-webfont.woff") format("woff"),
+        url("Fonts/teletactile-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "teletextOne";
+    src: url("Fonts/teletext_1-webfont.woff") format("woff"),
+        url("Fonts/teletext_1-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar-top {
+    width: 100%;
+    background-color: blue;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    a {
+        color: white;
+        font-family: "teletextOne";
+        text-decoration: none;
+        font-size: 150%;
+    }
+}
+
+.page-header {
+    width: 35rem;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 40.5em 40.5em;
+    grid-template-rows: 5em auto 5em auto;
+    grid-column-gap: 1.5em;
+    grid-row-gap: 1.5em;
+}
+.grid-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 3px solid red;
+}
+.sub-grid {
+    display: grid;
+    grid-template-columns: 20em 20em;
+    grid-template-rows: 20em 20em;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+}
+.story {
+    font-family: "teletactileRegular";
+    color: blue;
+    overflow: hidden;
+}
+
+img.grid-icon {
+    height: 20em;
+    width: 20em;
+}
