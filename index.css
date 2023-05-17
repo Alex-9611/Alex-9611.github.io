@@ -13,7 +13,7 @@
 body {
   background-color: black;
   color: white;
-  max-width: 1280px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -57,39 +57,46 @@ h3 {
 
 .page-header {
   width: 50%;
+  min-width: 35rem;
 }
 
 .main-grid {
   display: grid;
-  grid-template-columns: 40.5em 40.5em;
-  grid-template-rows: 5em auto 5em auto;
-  grid-column-gap: 1.5em;
-  grid-row-gap: 1.5em;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 100px;
+}
+@media (min-width: 1000px) {
+  .main-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-.grid-header {
+.content-tile .header {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   border: 3px solid red;
+  margin-bottom: 6px;
 }
-
-.sub-grid {
+.content-tile .sub-grid {
   display: grid;
-  grid-template-columns: 20em 20em;
-  grid-template-rows: 20em 20em;
-  grid-column-gap: 0.5em;
-  grid-row-gap: 0.5em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
 }
-
-.story {
+.content-tile .story {
   font-family: "teletactileRegular";
   color: blue;
+  aspect-ratio: 1/1;
   overflow: hidden;
 }
-
-img.grid-icon {
-  height: 20em;
-  width: 20em;
+.content-tile img.grid-icon {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1/1;
 }/*# sourceMappingURL=index.css.map */
