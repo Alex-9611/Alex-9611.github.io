@@ -26,7 +26,7 @@ h3 {
 h1 {
   color: black;
   background-color: white;
-  font-size: 500%;
+  font-size: 400%;
 }
 
 h2 {
@@ -39,10 +39,14 @@ h3 {
   font-size: 125%;
 }
 
+p {
+  font-size: 0.75em;
+}
+
 .navbar-top {
   width: 100%;
   background-color: blue;
-  padding: 0.5rem;
+  padding: 0.5rem 0rem 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -57,7 +61,7 @@ h3 {
 
 .page-header {
   width: 50%;
-  min-width: 35rem;
+  min-width: 27.5rem;
 }
 
 .main-grid {
@@ -68,7 +72,7 @@ h3 {
   grid-column-gap: 20px;
   grid-row-gap: 100px;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .main-grid {
     grid-template-columns: 1fr 1fr;
   }

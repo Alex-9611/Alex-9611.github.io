@@ -3,7 +3,7 @@
 .navbar-top {
     width: 100%;
     background-color: blue;
-    padding: 0.5rem;
+    padding: 0.5rem 0rem 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -19,7 +19,7 @@
 
 .page-header {
     width: 50%;
-    min-width: 35rem;
+    min-width: 27.5rem;
 }
 
 .main-grid {
@@ -30,7 +30,7 @@
     grid-column-gap: $page-width * 0.02;
     grid-row-gap: 100px;
 
-    @media (min-width: 1000px) {
+    @media (min-width: 800px) {
         grid-template-columns: 1fr 1fr;
     }
 }
