@@ -89,15 +89,16 @@ a {
   border: 3px solid red;
   margin-bottom: 6px;
 }
-.content-tile .header:hover {
-  border: 3px solid fuchsia;
-}
 .content-tile .sub-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-column-gap: 2%;
   grid-row-gap: 2%;
+}
+.content-tile .sub-grid .wide {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 .content-tile .story {
   font-family: "teletactileRegular";
@@ -109,4 +110,7 @@ a {
   height: 100%;
   width: 100%;
   aspect-ratio: 1/1;
-}/*# sourceMappingURL=index.css.map */
+}
+.content-tile img.grid-icon.wide {
+  aspect-ratio: 2/1;
+}/*# sourceMappingURL=art.css.map */

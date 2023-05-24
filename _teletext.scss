@@ -18,6 +18,22 @@ $teletext-secondary: "teletactileRegular";
 
 $page-width: 1000px;
 
+.navbar-top {
+    width: 100%;
+    background-color: blue;
+    padding: 0.5rem 0rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    a {
+        color: white;
+        font-family: $teletext-primary;
+        font-size: 150%;
+    }
+}
+
 body {
     background-color: black;
     color: white;
@@ -45,4 +61,7 @@ h3 {
 }
 p {
     font-size: 0.75em;
+}
+a {
+    text-decoration: none;
 }
