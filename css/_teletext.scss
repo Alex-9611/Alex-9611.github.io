@@ -31,6 +31,11 @@ $page-width: 1000px;
         color: white;
         font-family: $teletext-primary;
         font-size: 150%;
+
+        &:focus,
+        &:hover {
+            color: fuchsia;
+        }
     }
 }
 
@@ -95,15 +100,6 @@ a {
         font-weight: bold;
         border: 3px solid red;
         margin-bottom: 6px;
-
-        &.nav {
-            &:hover {
-                border: 3px solid fuchsia;
-            }
-            &:focus {
-                border: 3px solid fuchsia;
-            }
-        }
     }
 
     .sub-grid {
@@ -125,5 +121,12 @@ a {
         height: 100%;
         width: 100%;
         aspect-ratio: 1 / 1;
+    }
+
+    .nav {
+        &:focus,
+        &:hover {
+            border: 3px solid fuchsia;
+        }
     }
 }
