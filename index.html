@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Teletext tribute act</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <nav class="navbar-top">
@@ -65,13 +66,23 @@
               class="grid-icon"
             >
           </a>
-          <a href="news.html#sport" class="nav">
-            <img
-              src="Gallery/football.png"
-              alt="pixel-art football game"
-              class="grid-icon"
-            >
-          </a>
+          <div class="nav sport">
+            <a href="news.html#sport" id="default-sport">
+              <img
+                src="Gallery/football.png"
+                alt="pixel-art football game"
+                class="grid-icon default"
+              >
+            </a>
+            <iframe 
+              class="grid-icon hide" width="100%" height="100%"
+              id="sport-video"
+              src="https://www.youtube.com/embed/MusyO7J2inM" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; encrypted-media; picture-in-picture" 
+              allowfullscreen></iframe>
+            <button class="hidden-button" id="hidden-button">A</button>
+          </div>
           <div class="story">
             <h3>Scores!</h3>
             <p>Like one-all, and two-nil, amongst others you may have seen before</p>

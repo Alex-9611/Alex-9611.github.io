@@ -1,1 +1,29 @@
 @import "teletext";
+
+.nav.sport {
+    position: relative;
+
+    a {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    button {
+        position: absolute;
+        left: 2.5rem;
+        bottom: 6.5rem;
+        border-radius: 10px;
+        opacity: 0%;
+        height: 2rem;
+        width: 2rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
