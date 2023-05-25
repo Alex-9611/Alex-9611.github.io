@@ -1,6 +1,6 @@
 @import "teletext";
 
-.nav.sport {
+.sport {
     position: relative;
 
     a {
@@ -24,6 +24,6 @@
     }
 }
 
-.hide.hide.hide {
-    display: none;
+.hide {
+    display: none !important;
 }
