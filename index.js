@@ -1,5 +1,4 @@
 const hiddenButton = document.querySelector("button");
-console.log(hiddenButton);
 
 hiddenButton.onclick = function () {
     hiddenButton.classList.add("hide");
