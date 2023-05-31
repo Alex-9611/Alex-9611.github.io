@@ -1,46 +1,41 @@
-const hiddenButton = document.querySelector("button");
+const conversationBox = document.getElementById("conversation");
+const prompt = document.getElementById("prompt");
 
-const explanationNote = document.getElementById("prompt");
-
-const messageOne = document.getElementById("message-one");
-const messageTwo = document.getElementById("message-two");
-const messageThree = document.getElementById("message-three");
-const messageFour = document.getElementById("message-four");
-const messageFive = document.getElementById("message-five");
-
-const userInput = document.getElementById("user-submission");
+const submissionArea = document.getElementById("submission-area");
+const inputLabel = document.getElementById("input-label");
+const userInput = document.getElementById("user-input");
+const submitButton = document.querySelector("button");
 
 let numOfClicks = 0;
 
-hiddenButton.onclick = function () {
-    /* After each click: 
-        Check that they've written something
-        If so, print out the fake message, and disable their inputs
-        Then wait, and print out the fake response. Then re-enable their input
-
-        Disable input after the final one, or add a reset button
-    */
-
-    if (userInput.value === "") {
+submitButton.onclick = function () {
+    if (!userInput.value) {
         return;
     }
-    explanationNote.classList.add("hide");
+    prompt.classList.add("hide");
 
     switch (numOfClicks) {
         case 0:
-            messageOne.classList.remove("hide");
-            setTimeout(() => {
-                messageTwo.classList.remove("hide");
-            });
+            const messageOne = createNewMessage(
+                "A'right 'Arry. Did you see that ludicrous display last night?"
+            );
+            conversationBox.appendChild(messageOne);
+            printResponse("What was Wenger thinking, sending Walcott on that early?");
             break;
         case 1:
-            messageThree.classList.remove("hide");
-            setTimeout(() => {
-                messageFour.classList.remove("hide");
-            });
+            const messageTwo = createNewMessage(
+                "The thing about Arsenal is they always try and walk it in"
+            );
+            conversationBox.appendChild(messageTwo);
+            printResponse("That is true. See you later boss");
             break;
         case 2:
-            messageFive.classList.remove("hide");
+            const messageThree = createNewMessage("Mind 'ow ya go");
+            conversationBox.appendChild(messageThree);
+
+            submissionArea.removeChild(userInput);
+            submissionArea.removeChild(submitButton);
+            submissionArea.removeChild(inputLabel);
             break;
     }
 
@@ -48,16 +43,31 @@ hiddenButton.onclick = function () {
     numOfClicks++;
 };
 
-function slowRevealMessage(messageElement) {
-    messageElement.value = "...";
-    messageElement.classList.remove("hide");
-    setTimeout(() => {
-        messageElement.value = "What was Wenger thinking, sending Walcott on that early?";
-    }, 1000);
-}
-
-function createNewMessage(user = true, content) {
+function createNewMessage(content, user = true) {
     const newMessage = document.createElement("p");
+
     newMessage.classList.add("message");
     newMessage.classList.add(user ? "user" : "other");
+
+    newMessage.innerHTML = content;
+
+    return newMessage;
+}
+
+function printResponse(content) {
+    const placeHolderMessage = createNewMessage("...", false);
+    const newMessage = createNewMessage(content, false);
+
+    conversationBox.appendChild(placeHolderMessage);
+
+    userInput.disabled = true;
+    submitButton.disabled = true;
+
+    setTimeout(() => {
+        conversationBox.removeChild(placeHolderMessage);
+        conversationBox.appendChild(newMessage);
+
+        userInput.disabled = false;
+        submitButton.disabled = false;
+    }, 1000);
 }

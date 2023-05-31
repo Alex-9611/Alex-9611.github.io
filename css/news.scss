@@ -12,6 +12,7 @@
             border-radius: 5px;
             padding: 0.1rem;
             margin-bottom: 0.25rem;
+            width: fit-content;
 
             &.user {
                 margin-right: 0.5rem;
@@ -26,7 +27,7 @@
             }
         }
 
-        .explanation {
+        .prompt {
             text-align: center;
             margin-bottom: 0.5rem;
         }
