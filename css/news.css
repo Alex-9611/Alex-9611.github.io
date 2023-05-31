@@ -71,9 +71,6 @@ select {
   font-family: "teletextOne";
   font-size: 150%;
 }
-.navbar-top a:focus, .navbar-top a:hover {
-  color: fuchsia;
-}
 
 body {
   background-color: black;
@@ -86,6 +83,11 @@ h1,
 h2,
 h3 {
   font-family: "teletextOne";
+}
+
+p,
+span {
+  font-family: "teletactileRegular";
 }
 
 h1 {
@@ -113,6 +115,10 @@ p {
 
 a {
   text-decoration: none;
+}
+
+.nav:focus, .nav:hover {
+  border: 3px solid fuchsia;
 }
 
 .page-header {
@@ -160,6 +166,38 @@ a {
   width: 100%;
   aspect-ratio: 1/1;
 }
-.content-tile .nav:focus, .content-tile .nav:hover {
-  border: 3px solid fuchsia;
+
+.sport .conversation {
+  display: flex;
+  flex-direction: column;
+}
+.sport .conversation .message {
+  font-size: 75%;
+  max-width: 50%;
+  word-wrap: break-word;
+  border-radius: 5px;
+  padding: 0.1rem;
+  margin-bottom: 0.25rem;
+}
+.sport .conversation .message.user {
+  margin-right: 0.5rem;
+  margin-left: auto;
+  text-align: right;
+  background-color: dodgerblue;
+}
+.sport .conversation .message.other {
+  margin-left: 0.5rem;
+  background-color: grey;
+}
+.sport .conversation .explanation {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.sport .conversation .hide {
+  display: none;
+}
+.sport .submission-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }/*# sourceMappingURL=news.css.map */

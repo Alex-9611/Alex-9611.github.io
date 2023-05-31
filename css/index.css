@@ -71,9 +71,6 @@ select {
   font-family: "teletextOne";
   font-size: 150%;
 }
-.navbar-top a:focus, .navbar-top a:hover {
-  color: fuchsia;
-}
 
 body {
   background-color: black;
@@ -86,6 +83,11 @@ h1,
 h2,
 h3 {
   font-family: "teletextOne";
+}
+
+p,
+span {
+  font-family: "teletactileRegular";
 }
 
 h1 {
@@ -113,6 +115,10 @@ p {
 
 a {
   text-decoration: none;
+}
+
+.nav:focus, .nav:hover {
+  border: 3px solid fuchsia;
 }
 
 .page-header {
@@ -159,9 +165,6 @@ a {
   height: 100%;
   width: 100%;
   aspect-ratio: 1/1;
-}
-.content-tile .nav:focus, .content-tile .nav:hover {
-  border: 3px solid fuchsia;
 }
 
 .sport {

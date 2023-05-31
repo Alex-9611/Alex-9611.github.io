@@ -46,7 +46,11 @@ body {
 h1,
 h2,
 h3 {
-    font-family: "teletextOne";
+    font-family: $teletext-primary;
+}
+p,
+span {
+    font-family: $teletext-secondary;
 }
 h1 {
     color: black;
