@@ -8,7 +8,13 @@ const submitButton = document.querySelector("button");
 
 let numOfClicks = 0;
 
-submitButton.onclick = function () {
+userInput.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+        processSubmission();
+    }
+});
+
+const processSubmission = function () {
     if (!userInput.value) {
         return;
     }
@@ -69,5 +75,9 @@ function printResponse(content) {
 
         userInput.disabled = false;
         submitButton.disabled = false;
+
+        userInput.focus();
     }, 1000);
 }
+
+submitButton.onclick = processSubmission;
