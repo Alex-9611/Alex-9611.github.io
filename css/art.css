@@ -71,6 +71,9 @@ select {
   font-family: "teletextOne";
   font-size: 150%;
 }
+.navbar-top a:focus, .navbar-top a:hover {
+  color: fuchsia;
+}
 
 body {
   background-color: black;
@@ -118,7 +121,7 @@ a {
 }
 
 .nav:focus, .nav:hover {
-  border: 3px solid fuchsia;
+  border: 3px solid fuchsia !important;
 }
 
 .page-header {

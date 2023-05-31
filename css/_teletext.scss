@@ -33,6 +33,11 @@ $page-width: 1000px;
         color: white;
         font-family: $teletext-primary;
         font-size: 150%;
+
+        &:focus,
+        &:hover {
+            color: fuchsia;
+        }
     }
 }
 
@@ -78,7 +83,7 @@ a {
 .nav {
     &:focus,
     &:hover {
-        border: 3px solid fuchsia;
+        border: 3px solid fuchsia !important;
     }
 }
 
