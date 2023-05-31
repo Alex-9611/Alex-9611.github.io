@@ -33,11 +33,6 @@ $page-width: 1000px;
         color: white;
         font-family: $teletext-primary;
         font-size: 150%;
-
-        &:focus,
-        &:hover {
-            color: fuchsia;
-        }
     }
 }
 
@@ -74,6 +69,13 @@ p {
 }
 a {
     text-decoration: none;
+}
+
+.nav {
+    &:focus,
+    &:hover {
+        border: 3px solid fuchsia;
+    }
 }
 
 .page-header {
@@ -123,12 +125,5 @@ a {
         height: 100%;
         width: 100%;
         aspect-ratio: 1 / 1;
-    }
-
-    .nav {
-        &:focus,
-        &:hover {
-            border: 3px solid fuchsia;
-        }
     }
 }

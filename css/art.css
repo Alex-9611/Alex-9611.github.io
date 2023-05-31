@@ -178,6 +178,12 @@ img.grid-icon.noface {
   aspect-ratio: 1/2;
 }
 
+img.grid-icon.jackson {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  aspect-ratio: 2/1;
+}
+
 .fit {
   -o-object-fit: cover;
      object-fit: cover;
