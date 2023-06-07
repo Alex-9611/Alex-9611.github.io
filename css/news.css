@@ -57,14 +57,30 @@ select {
   font-weight: normal;
   font-style: normal;
 }
+:root {
+  --colour-one: blue;
+  --colour-two: fuchsia;
+  --colour-three: yellow;
+  --colour-four: aqua;
+  --colour-five: red;
+}
+
 .navbar-top {
   width: 100%;
-  background-color: blue;
+  background-color: var(--colour-one);
   padding: 0.5rem 0rem 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+.navbar-top .nav-links {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   gap: 1rem;
+}
+.navbar-top button {
+  margin-right: 0;
+  margin-left: auto;
 }
 .navbar-top a {
   color: white;
@@ -72,7 +88,7 @@ select {
   font-size: 150%;
 }
 .navbar-top a:focus, .navbar-top a:hover {
-  color: fuchsia;
+  color: var(--colour-two);
 }
 
 body {
@@ -101,19 +117,20 @@ h1 {
 }
 
 h2 {
-  color: fuchsia;
+  color: var(--colour-two);
   font-size: 250%;
   margin: 1rem 0 1rem;
 }
 
 h3 {
-  color: yellow;
+  color: var(--colour-three);
   font-size: 125%;
   margin: 0.25rem 0 0.25rem;
 }
 
 p {
   font-size: 0.75em;
+  color: var(--colour-four);
 }
 
 a {
@@ -121,7 +138,7 @@ a {
 }
 
 .nav:focus-within, .nav:hover {
-  border: 3px solid fuchsia !important;
+  border: 3px solid var(--colour-two) !important;
 }
 
 .page-header {
@@ -148,7 +165,7 @@ a {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  border: 3px solid red;
+  border: 3px solid var(--colour-five);
   margin-bottom: 6px;
 }
 .content-tile .sub-grid {
@@ -160,7 +177,7 @@ a {
 }
 .content-tile .story {
   font-family: "teletactileRegular";
-  color: blue;
+  color: var(--colour-one);
   aspect-ratio: 1/1;
   overflow: hidden;
 }
@@ -183,6 +200,7 @@ a {
   margin-bottom: 1rem;
   width: -moz-fit-content;
   width: fit-content;
+  color: white;
 }
 .sport .conversation .message.user {
   margin-right: 0.5rem;
@@ -196,7 +214,6 @@ a {
 }
 .sport .conversation .prompt {
   text-align: center;
-  color: yellow;
 }
 .sport .conversation .hide {
   display: none;
@@ -207,6 +224,6 @@ a {
   justify-content: center;
   font-family: "teletactileRegular";
   font-size: 75%;
-  color: yellow;
+  color: var(--colour-four);
   margin-top: 1rem;
 }/*# sourceMappingURL=news.css.map */

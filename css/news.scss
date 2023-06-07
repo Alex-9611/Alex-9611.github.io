@@ -13,6 +13,7 @@
             padding: 0.1rem;
             margin-bottom: 1rem;
             width: fit-content;
+            color: white;
 
             &.user {
                 margin-right: 0.5rem;
@@ -29,7 +30,6 @@
 
         .prompt {
             text-align: center;
-            color: yellow;
         }
 
         .hide {
@@ -42,7 +42,7 @@
         justify-content: center;
         font-family: $teletext-secondary;
         font-size: 75%;
-        color: yellow;
+        color: var(--colour-four);
         margin-top: 1rem;
     }
 }
