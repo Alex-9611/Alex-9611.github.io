@@ -26,12 +26,11 @@ colourPaletteToggle.onclick = function () {
 
 const colourPalettesDictionary = {
     1: ["blue", "fuchsia", "yellow", "aqua", "red"],
-    3: ["red", "aqua", "yellow", "fuchsia", "red"],
     2: ["#648FFF", "#DC267F", "#785EF0", "#FE6100", "#FFB000"],
 };
 
 function cyclePalette() {
-    if (currentPaletteIndex === 3) {
+    if (currentPaletteIndex === 2) {
         currentPaletteIndex = 1;
     } else {
         currentPaletteIndex += 1;
