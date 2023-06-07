@@ -81,7 +81,7 @@ a {
 }
 
 .nav {
-    &:focus,
+    &:focus-within,
     &:hover {
         border: 3px solid fuchsia !important;
     }

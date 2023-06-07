@@ -120,7 +120,7 @@ a {
   text-decoration: none;
 }
 
-.nav:focus, .nav:hover {
+.nav:focus-within, .nav:hover {
   border: 3px solid fuchsia !important;
 }
 
@@ -187,10 +187,6 @@ a {
   height: 2rem;
   width: 2rem;
 }
-.sport button:hover {
-  cursor: pointer;
-}
-
 .hide {
   display: none !important;
 }/*# sourceMappingURL=index.css.map */
