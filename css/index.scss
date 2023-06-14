@@ -22,4 +22,19 @@
 
 .hide {
     display: none !important;
+    visibility: hidden;
+}
+
+.story {
+    container-type: inline-size;
+    container-name: story;
+}
+
+@container story (max-width: 24000px ) {
+    h3 {
+        font-size: 7.5cqw;
+    }
+    p {
+        font-size: 5cqw;
+    }
 }

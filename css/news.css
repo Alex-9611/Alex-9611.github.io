@@ -137,7 +137,7 @@ h3 {
 }
 
 p {
-  font-size: 0.75em;
+  font-size: 75%;
   color: var(--colour-four);
 }
 
@@ -206,8 +206,8 @@ a {
   border-radius: 5px;
   padding: 0.1rem;
   margin-bottom: 1rem;
-  width: -moz-fit-content;
   width: fit-content;
+  width: -moz-fit-content;
   color: white;
 }
 .sport .conversation .message.user {
