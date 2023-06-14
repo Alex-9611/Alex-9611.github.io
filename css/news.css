@@ -67,17 +67,32 @@ select {
 
 .navbar-top {
   width: 100%;
-  height: 3rem;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: var(--colour-one);
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
 }
 .navbar-top .nav-links {
   padding: 0.5rem 0rem 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 5vw;
+  font-size: 2.7vw;
+  vertical-align: middle;
+}
+.navbar-top .nav-links a {
+  vertical-align: middle;
+}
+@media (min-width: 800px) {
+  .navbar-top .nav-links {
+    gap: 1rem;
+  }
+  .navbar-top .nav-links a {
+    font-size: 2rem;
+  }
 }
 .navbar-top button {
   margin-right: 0;
@@ -87,8 +102,14 @@ select {
   cursor: pointer;
 }
 .navbar-top button img {
-  height: 100%;
+  height: 4vw;
   width: auto;
+  vertical-align: middle;
+}
+@media (min-width: 800px) {
+  .navbar-top button img {
+    height: 2rem;
+  }
 }
 .navbar-top a {
   color: white;
@@ -149,7 +170,7 @@ a {
 }
 
 .page-header {
-  font-size: max(10vw, 2.5rem);
+  font-size: max(7.5vw, 1.5rem);
   text-align: center;
 }
 
@@ -169,6 +190,7 @@ a {
 
 .content-tile .header {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   font-weight: bold;
@@ -196,6 +218,7 @@ a {
 
 .sport .conversation {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
 }
 .sport .conversation .message {
@@ -227,6 +250,7 @@ a {
 }
 .sport .submission-area {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
   font-family: "teletactileRegular";

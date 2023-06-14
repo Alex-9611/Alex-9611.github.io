@@ -3,6 +3,7 @@
 .sport {
     .conversation {
         display: flex;
+        flex-wrap: nowrap;
         flex-direction: column;
 
         .message {
@@ -39,6 +40,7 @@
     }
     .submission-area {
         display: flex;
+        flex-wrap: nowrap;
         flex-direction: row;
         justify-content: center;
         font-family: $teletext-secondary;

@@ -30,18 +30,32 @@ $page-width: 1000px;
 
 .navbar-top {
     width: 100%;
-    height: 3rem;
+    height: fit-content;
     background-color: var(--colour-one);
 
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
 
     .nav-links {
         padding: 0.5rem 0rem 0.5rem;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        gap: 1rem;
+        gap: 5vw;
+        font-size: 2.7vw;
+        vertical-align: middle;
+
+        a {
+            vertical-align: middle;
+        }
+
+        @media (min-width: 800px) {
+            gap: 1rem;
+            a {
+                font-size: 2rem;
+            }
+        }
     }
 
     button {
@@ -52,8 +66,13 @@ $page-width: 1000px;
         cursor: pointer;
 
         img {
-            height: 100%;
+            height: 4vw;
             width: auto;
+            vertical-align: middle;
+
+            @media (min-width: 800px) {
+                height: 2rem;
+            }
         }
     }
 
@@ -116,7 +135,7 @@ a {
 }
 
 .page-header {
-    font-size: max(10vw, 2.5rem);
+    font-size: max(7.5vw, 1.5rem);
     text-align: center;
 }
 
@@ -136,6 +155,7 @@ a {
 .content-tile {
     .header {
         display: flex;
+        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
         font-weight: bold;
