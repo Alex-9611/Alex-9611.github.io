@@ -19,6 +19,15 @@ img.grid-icon.jackson {
     grid-column-end: 3;
     aspect-ratio: 2 / 1;
 }
+
+img.grid-icon.detective {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    aspect-ratio: 2 / 1;
+}
+
 .fit {
     object-fit: cover;
 }

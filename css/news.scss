@@ -1,5 +1,12 @@
 @import "teletext";
 
+img.grid-icon.crying {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
 .sport {
     .conversation {
         display: flex;
@@ -38,6 +45,7 @@
             display: none;
         }
     }
+
     .submission-area {
         display: flex;
         flex-wrap: nowrap;
